@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import restaurants from "@/data.json";
 
-const route = useRoute();
+//The useRoute() composable can be used in a <script setup> block or a setup() method of a Vue component to access the current route details.
+const route = useRoute(); 
 const name = route.params.name;
 
 const restaurant = restaurants.find((r) => r.name === name);
